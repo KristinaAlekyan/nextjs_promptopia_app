@@ -34,7 +34,6 @@ const MyProfile = () => {
 
     if (hasConfirmed) {
       try {
-        console.log(post._id,'post._idpost._idpost._id');
         await fetch(`/api/prompt/${post._id.toString()}`, {
           method: "DELETE",
         });
